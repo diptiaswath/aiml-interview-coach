@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ml-01",
+    "round": "ml-case",
+    "prompt": "An e-commerce company wants 'ML to reduce customer churn.' Frame it as an ML problem: define the target, the data you'd need, and the metric you'd optimise."
+  },
+  {
+    "id": "ml-02",
+    "round": "ml-case",
+    "prompt": "A bank wants to 'use AI to detect fraud,' but only 0.1% of transactions are fraudulent. How do you frame the problem and evaluate a first model?"
+  },
+  {
+    "id": "beh-01",
+    "round": "behavioral",
+    "prompt": "Tell me about a time a model or analysis you built didn't perform as expected once it was used for real. What happened, and what did you do?"
+  },
+  {
+    "id": "beh-02",
+    "round": "behavioral",
+    "prompt": "Describe a project where you owned an ML problem end to end, including the parts that weren't your fault."
+  },
+  {
+    "id": "mls-01",
+    "round": "ml-system-design",
+    "prompt": "Design a RAG-based support assistant over a company's 10,000 internal documents. How do you keep answers accurate and measure quality?"
+  },
+  {
+    "id": "gen-01",
+    "round": "genai-llm",
+    "prompt": "Your LLM feature demos well, but users say it 'makes things up.' Walk through how you'd diagnose and reduce the hallucinations."
+  }
+]

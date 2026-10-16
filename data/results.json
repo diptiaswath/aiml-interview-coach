@@ -1,0 +1,68 @@
+[
+  {
+    "round": "ml-case",
+    "question_id": "ml-02",
+    "total": 3,
+    "max": 20,
+    "categories": [
+      {
+        "name": "Clarifying questions",
+        "score": 0,
+        "max": 5,
+        "feedback": "Asked nothing about the bank's goal, data and labels, latency, or the cost of a missed fraud versus a false alarm."
+      },
+      {
+        "name": "Problem framing",
+        "score": 1,
+        "max": 5,
+        "feedback": "A 70% fraud-probability threshold implies a probability target, but no inputs, no baseline, and no plan for building a first model."
+      },
+      {
+        "name": "Metrics & evaluation",
+        "score": 1,
+        "max": 5,
+        "feedback": "Noted the 0.1% imbalance but named no metric, validation split or failure modes; the 70% cutoff was unjustified."
+      },
+      {
+        "name": "Communication",
+        "score": 1,
+        "max": 5,
+        "feedback": "Clear but very short; mostly restated the question with no structure or trade-offs."
+      }
+    ],
+    "summary": "Say how you'd evaluate and set the threshold: accuracy is useless at 0.1% fraud, so name precision/recall or PR-AUC and pick the threshold from the cost of a missed fraud versus a false alarm."
+  },
+  {
+    "round": "behavioral",
+    "question_id": "beh-01",
+    "total": 9,
+    "max": 20,
+    "categories": [
+      {
+        "name": "Clarifying questions",
+        "score": 1,
+        "max": 5,
+        "feedback": "Said the cause was identified but not how; nothing about asking about targets, data or constraints."
+      },
+      {
+        "name": "Problem framing",
+        "score": 3,
+        "max": 5,
+        "feedback": "Clear arc: missed targets, no CI/CD tests as root cause, evaluation tests in CI, regression tests in CD; 'missed targets' left vague."
+      },
+      {
+        "name": "Metrics & evaluation",
+        "score": 2,
+        "max": 5,
+        "feedback": "Mentioned regression tests, 90% of targets and no drift, but named no metric, validation approach or drift monitoring."
+      },
+      {
+        "name": "Communication",
+        "score": 3,
+        "max": 5,
+        "feedback": "Concise and logically ordered; 'Closed CD' unclear and no trade-offs or stakeholder impact."
+      }
+    ],
+    "summary": "Name the metric and numbers: which metric missed target and by how much, what the evaluation tests checked, and how drift was measured."
+  }
+]
